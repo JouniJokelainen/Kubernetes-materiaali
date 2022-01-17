@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-pod
+  labels:
+    project: pod-test
+spec:
+  containers:
+    - name: nginx
+      image: jounijokelainen/kubenginx
+      ports:
+        - containerPort: 80
